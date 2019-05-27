@@ -44,15 +44,15 @@
             <div class="col-md-3 mb-4" id="ttsp" *ngFor = "let data of datas">
                     <div class="card shadow-sm">
                             <a href="./{{data.id}}" target="_target"> 
-                                    <img width="100%" height="300" [src]=data.image [alt]=data.name>
+                                    <img width="100%" height="300" [src]=data.image [alt]=data.ProductName>
                             </a>
                     <div class="container">
                         <a href="#" class="card-link text-body">
-                            <h5 data-toggle="tooltip" data-placement="bottom" [title]=data.name class="card-title text-truncate">{{data.name}}</h5>
+                            <h5 data-toggle="tooltip" data-placement="bottom" [title]=data.ProductName class="card-title text-truncate">{{data.ProductName}}</h5>
                         </a>
                         <hr>
                         <h5 style="color:#16a085;" class="text-right">
-                          {{data.cost}}
+                          {{data.Price}}
                         </h5>
                     </div>
                 </div>
