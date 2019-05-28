@@ -43,11 +43,11 @@
         <div class="row">
             <div class="col-md-3 mb-4" id="ttsp" *ngFor = "let data of datas">
                     <div class="card shadow-sm">
-                            <a href="./2" target="_blank"> 
+                            <a href="./{{data.id}}" target="_blank"> 
                                     <img width="100%" height="250" [src]=data.image [alt]=data.ProductName>
                             </a>
                     <div class="container">
-                        <a href="./2" class="card-link text-body">
+                        <a href="./{{data.id}}" class="card-link text-body">
                             <h5 data-toggle="tooltip" data-placement="bottom" [title]=data.ProductName class="card-title text-truncate">{{data.ProductName}}</h5>
                         </a>
                         <hr>
